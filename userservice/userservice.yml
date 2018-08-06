@@ -32,4 +32,4 @@ eureka:
       default-zone: http://localhost:8761/eureka/
 
 signing:
-  key: {cipher}179c3b2fa31763d00161385758deaba81957b7a9dc1de87746f2424c0dee0b395187da000697df82fb67971255e8f5e6
+  key: "{cipher}179c3b2fa31763d00161385758deaba81957b7a9dc1de87746f2424c0dee0b395187da000697df82fb67971255e8f5e6"
