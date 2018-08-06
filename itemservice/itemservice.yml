@@ -15,10 +15,6 @@ spring:
     test-while-idle: true
     validation-query: "SELECT 1"
 
-security:
-  basic:
-    enabled: false
-
 server:
   port: 8082
 
@@ -32,6 +28,8 @@ eureka:
       default-zone: http://localhost:8761/eureka/
 
 security:
+  basic:
+    enabled: false
   oauth2:
     resource:
       user-info-uri: "http://localhost:8901/user"
