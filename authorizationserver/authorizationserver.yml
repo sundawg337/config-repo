@@ -16,12 +16,13 @@ spring:
     validation-query: "SELECT 1"
 
 security:
-  basic:
-    enabled: false
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:8901/user
 
 server:
-  port: 8081
-  
+  port: 8901
+
 eureka:
   instance:
     prefer-ip-address: true
@@ -29,12 +30,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      default-zone: http://localhost:8761/eureka/
-
-security:
-  oauth2:
-    resource:
-      user-info-uri: http://localhost:8901/user
+      default-zone: http://localhost:8761/eureka
 
 signing:
   key: 345345fsdgsf5345
